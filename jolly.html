@@ -583,13 +583,13 @@
         const generateLessons = () => {
             const lessons = [];
             const phonicsSounds = [
-                "s", "a", "t", "p", "i", "n", "m", "d", "g", "o", 
-                "c", "k", "e", "u", "r", "h", "b", "f", "l", "j", 
-                "v", "w", "x", "y", "z", "qu", "ch", "sh", "th", "ng",
-                "ai", "ee", "igh", "oa", "oo", "ar", "or", "ur", "ow", "oi",
-                "ear", "air", "ure", "er", "ay", "ou", "ie", "ea", "oy", "ir",
-                "ue", "aw", "wh", "ph", "ew", "oe", "au", "ey", "a-e", "e-e",
-                "i-e", "o-e", "u-e", "kn", "gn", "wr", "ck", "dge", "tch", "tion"
+                "s", "a", "t", "i", "p", "n", "s to n", "ck", "e", "h", 
+                "r", "m", "d", "ck to d", "g", "o", "u", "l", "f", "b", 
+                "g to b", "ai", "j", "oa", "ie", "ee-or", "s to or", "blending words", "vocabularies", "z",
+                "w", "ng", "v", "oo", "y", "x", "ch", "sh", "th", "g to th blending",
+                "qu", "ou", "oi", "ue", "er", "ar", "ai to ar", "Alternative ai", "Alternative ue", "Alternative oa",
+                "Alternative oi", "Alternative ie", "Alternative or", "Alternative s", "Alternative ou", "Alternative j", "Alternative ee", "Alternative er", "Alternative f", "Tricky words 1",
+                "Tricky words 2", "Tricky words 3", "Tricky words 4", "Tricky words 5", "Tricky words 6", "irregular 1", "irregular 2", "irregular 3", "irregular 4", "irregular 5"
             ];
             
             for (let i = 0; i < 70; i++) {
@@ -602,9 +602,7 @@
                     content: `
                         <h2>Day ${i+1}: The ${sound.toUpperCase()} Sound</h2>
                         <p>Welcome to Day ${i+1} of your Jolly Phonics adventure! Today we're learning about the <strong>${sound}</strong> sound.</p>
-                        
-                        <img src="https://source.unsplash.com/random/600x400/?phonics,${sound},child,learning&sig=${i}" class="lesson-image" alt="Phonics illustration">
-                        
+                               
                         <h3>Let's practice!</h3>
                         <p>Make the ${sound} sound together:</p>
                         <div style="background: #f0f7ff; padding: 15px; border-radius: 10px; margin: 15px 0; text-align: center; font-size: 2rem; font-family: 'Fredoka One', cursive;">
